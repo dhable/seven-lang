@@ -3,7 +3,7 @@ player_guess = -1
 
 until player_guess == selected_number
     puts "Guess what the number is: "
-    player_guess = gets().to_i
+    player_guess = gets.to_i
 
     if player_guess < selected_number
         puts "higher"
