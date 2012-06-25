@@ -17,8 +17,7 @@ class Tree
 	def initialize(tree = {})
 		tree.each_pair do |key, value|
 			@node_name = key
-			@children = []
-			value.each_pair { |child_key, child_value| children.push Tree.new( {child_key => child_value} ) }
+			@children = value.inject([]) { |children, current_child| children.push Tree.new({current_child[0] => current_child[1]}) }
 		end
 	end
 
