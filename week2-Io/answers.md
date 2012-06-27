@@ -1,6 +1,9 @@
 Week 2 - Io
 ===========
 
+Day 1
+-----
+
 __Q: Evaluate 1 + 1 and then 1 + "one". Is Io a strongly typed or weakly typed?__
 
 ```io
