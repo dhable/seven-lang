@@ -1,9 +1,7 @@
 Week 2 - Io
 ===========
 
-Day 1
------
-_Q: Evaluate 1 + 1 and then 1 + "one". Is Io a strongly typed or weakly typed?_
+__Q: Evaluate 1 + 1 and then 1 + "one". Is Io a strongly typed or weakly typed?__
 
 ```io
 Io> 1 + 1
@@ -39,7 +37,7 @@ Io> 1 type
 ```
 
 
-_Q: Is 0 true or false? What about the empty string? Is nil true or false? Support your answer with code.
+__Q: Is 0 true or false? What about the empty string? Is nil true or false? Support your answer with code.__
 
 The values of 0 and the empty string evaluate to true. The value of nil evaluates to false.
 
@@ -52,11 +50,11 @@ Io> nil and true
 ==> false
 ```
 
-_Q: How can you tell what slots a prototype supports?_
+__Q: How can you tell what slots a prototype supports?__
 
 Send the prototype the message "slotNames".
 
-_Q: What is the difference between = (equals), := (colon equals), and ::= (colon colon equals)? When would you use each one?
+__Q: What is the difference between = (equals), := (colon equals), and ::= (colon colon equals)? When would you use each one?__
 
 - The = operator assigns a new value to an existing slot, raising an exception if the slot doesn't exist.
 - The := operator assigns a value to a slot and creates a new slow if that slot doesn't exist.
