@@ -10,13 +10,21 @@ import scala.actors._
 import Actor._
 
 object PageLoader {
+	/*
+		This method is the work horse for calculating the size and link count. It
+		returns this information as a tuple of two elements where the first is
+		the size and the second is the link count. I used a tuple to return two
+		separate pieces of information from a single function call (we already have
+		the page data so why not use it) and to avoid creating my own type.
+	*/
 	def getPageInfo(url: String): Tuple2[Int, Int] = {
 		val page = Source.fromURL(url).mkString
-		val linkPattern = "<a href".r
+		val linkPattern = "<a href".r  // a quick a dirty regex for finding links
 		(page.length, linkPattern.findAllIn(page).size)
 	}
 }
 
+// Just to note the timing differences on my machine, I added a few more sites.
 val urls = List("http://www.google.com",
 				"http://www.twitter.com",
 				"http://www.amazon.com",

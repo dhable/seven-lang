@@ -1,9 +1,11 @@
-# Week 1 - Ruby
-# Day 3
-#
-# Problem: Modify the CSV application to support an each method to return a CsvRow
-# object. Use method_missing on that CsvRow to return the value for the column for
-# a given heading.
+=begin
+	Week 1 - Ruby
+	Day 3
+
+	Problem: Modify the CSV application to support an each method to return a CsvRow
+	object. Use method_missing on that CsvRow to return the value for the column for
+	a given heading.
+=end
 
 module ActsAsCsv
 	def self.included(base)
