@@ -1,4 +1,4 @@
-module Main where
+module Day1 where
 
 	-- Write a function that builds two-tuples with all the possible 
 	-- combinations of two of the colors black, white, blue, yellow,

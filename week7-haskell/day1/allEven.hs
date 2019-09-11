@@ -1,4 +1,4 @@
-module Main where
+module Day1 where
 	-- How many different ways can you find to write allEven?
 
 	-- The base case from the text

@@ -1,4 +1,4 @@
-module Main where
+module Day1 where
 
 	-- Write a list comprehension to build a childhood multiplication
 	-- table. The table would be a list of three-tuples where the first
